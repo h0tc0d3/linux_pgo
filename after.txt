@@ -1,0 +1,772 @@
+POSIX message queue
+
+setting to a 60 second run per stressor
+dispatching hogs: 32 mq
+mq:
+ 3 978 703 797 984 CPU Cycles                     65,77 B/sec
+ 3 235 740 437 696 Instructions                   53,49 B/sec (0,813 instr. per cycle)
+     610 690 071 392 Branch Instructions            10,09 B/sec
+       3 707 214 528 Branch Misses                  61,28 M/sec ( 0,61%)
+     199 700 232 576 Stalled Cycles Frontend         3,30 B/sec
+     651 476 569 216 Stalled Cycles Backend         10,77 B/sec
+     310 958 430 720 Cache References                5,14 B/sec
+      23 157 411 296 Cache Misses                    0,38 B/sec ( 7,45%)
+ 1 756 921 409 696 Cache L1D Read                 29,04 B/sec
+     176 324 280 960 Cache L1D Read Miss             2,91 B/sec
+      87 671 865 024 Cache L1D Prefetch              1,45 B/sec
+     754 437 102 528 Cache L1I Read                 12,47 B/sec
+           531 378 400 Cache L1I Read Miss             8,78 M/sec
+      18 508 699 328 Cache DTLB Read                 0,31 B/sec
+       1 997 289 728 Cache DTLB Read Miss           33,01 M/sec
+                  82 720 Cache ITLB Read                 1,37 K/sec
+           857 124 384 Cache ITLB Read Miss           14,17 M/sec
+     611 009 879 712 Cache BPU Read                 10,10 B/sec
+       3 706 992 416 Cache BPU Read Miss            61,27 M/sec
+ 1 353 184 015 872 CPU Clock                      22,37 B/sec
+ 1 355 760 597 568 Task Clock                     22,41 B/sec
+                   2 208 Page Faults Total              36,50 /sec 
+                   2 208 Page Faults Minor              36,50 /sec 
+                         0 Page Faults Major               0,00 /sec 
+           212 323 424 Context Switches                3,51 M/sec
+                  46 080 Cgroup Switches               761,68 /sec 
+                  12 416 CPU Migrations                205,23 /sec 
+                         0 Alignment Faults                0,00 /sec 
+                         0 Emulation Faults                0,00 /sec 
+                   1 984 Page Faults User               32,79 /sec 
+                       224 Page Faults Kernel              3,70 /sec 
+           703 082 560 System Call Enter              11,62 M/sec
+           703 082 592 System Call Exit               11,62 M/sec
+           408 918 464 Kmalloc                         6,76 M/sec
+                         0 Kmalloc Node                    0,00 /sec 
+           545 175 712 Kfree                           9,01 M/sec
+             4 448 448 Kmem Cache Alloc               73,53 K/sec
+                         0 Kmem Cache Alloc Node           0,00 /sec 
+             4 281 952 Kmem Cache Free                70,78 K/sec
+                   3 904 MM Page Alloc                  64,53 /sec 
+                   3 360 MM Page Free                   55,54 /sec 
+           430 239 552 RCU Utilization                 7,11 M/sec
+                  14 784 Sched Migrate Task            244,37 /sec 
+                         0 Sched Move NUMA                 0,00 /sec 
+           106 838 592 Sched Wakeup                    1,77 M/sec
+                         0 Sched Proc Exec                 0,00 /sec 
+                   6 976 Sched Proc Exit               115,31 /sec 
+                   6 976 Sched Proc Fork               115,31 /sec 
+                   7 808 Sched Proc Free               129,06 /sec 
+                        32 Sched Proc Wait                 0,53 /sec 
+           212 323 424 Sched Switch                    3,51 M/sec
+                   6 144 Signal Generate               101,56 /sec 
+                   6 208 Signal Deliver                102,62 /sec 
+                       256 IRQ Entry                       4,23 /sec 
+                       256 IRQ Exit                        4,23 /sec 
+             1 421 248 Soft IRQ Entry                 23,49 K/sec
+             1 421 248 Soft IRQ Exit                  23,49 K/sec
+                         0 NMI handler                     0,00 /sec 
+                         0 Writeback Dirty Inode           0,00 /sec 
+                         0 Migrate MM Pages                0,00 /sec 
+                   7 136 SKB Consume                   117,95 /sec 
+                  69 152 SKB Kfree                       1,14 K/sec
+                         0 IOMMU IO Page Fault             0,00 /sec 
+                         0 IOMMU Map                       0,00 /sec 
+                         0 IOMMU Unmap                     0,00 /sec 
+                         0 Filemap page-cache add          0,00 /sec 
+                         0 Filemap page-cache del          0,00 /sec 
+                         0 OOM Compact Retry               0,00 /sec 
+                         0 OOM Wake Reaper                 0,00 /sec 
+                         0 Thermal Zone Trip               0,00 /sec 
+for a 60,50s run time:
+   1935,93s available CPU time
+     93,68s user time   (  4,84%)
+   1345,22s system time ( 69,49%)
+   1438,90s total time  ( 74,33%)
+load average: 28,46 8,24 2,84
+successful run completed in 60,50s (1 min, 0,50 secs)
+
+CPU
+
+setting to a 60 second run per stressor
+ipsec_mb: stressor will be skipped, CPU needs to be an x86-64 and a recent IPSec MB library is required.
+rdrand stressor will be skipped, not a recognised Intel CPU
+rseq stressor will be skipped, rseq system call failed to register, errno=22 (Invalid argument)
+secretmem stressor will be skipped, memfd_secret system call is not supported
+tsc stressor will be skipped, not a recognised Intel CPU
+dispatching hogs: 1 af-alg, 1 atomic, 1 branch, 1 bsearch, 1 context, 1 cpu, 1 crypt, 1 fp-error, 1 funccall, 1 funcret, 1 getrandom, 1 goto, 1 hash, 1 heapsort, 1 hsearch, 1 ioport, 1 jpeg, 1 judy, 1 list, 1 longjmp, 1 lsearch, 1 matrix, 1 matrix-3d, 1 mergesort, 1 nop, 1 numa, 1 opcode, 1 pkey, 1 plugin, 1 prefetch, 1 qsort, 1 radixsort, 1 regs, 1 shellsort, 1 skiplist, 1 sparsematrix, 1 str, 1 stream, 1 syncload, 1 tree, 1 tsearch, 1 uprobe, 1 vecfp, 1 vecmath, 1 vecshuf, 1 vecwide, 1 wcs, 1 zlib
+stress-ng-af-alg: 44 cryptographic algorithms found in /proc/crypto
+stress-ng-af-alg: 126 cryptographic algorithms in total (with defconfigs)
+stress-ng-af-alg: 10 cryptographic algorithms are internal and may be unused
+stress-ng-jpeg: this stressor is not implemented on this system: x86_64 Linux 6.0.9-noname gcc 12.2
+stress-ng-plugin: plugin shared library failed to open, skipping stressor
+stress-ng-sparsematrix: 5000 items in 500 x 500 sparse matrix (2.00% full)
+stress-ng-numa: system has 1 of a maximum 4 memory NUMA nodes
+stress-ng-stream: stressor loosely based on a variant of the STREAM benchmark code
+stress-ng-stream: do NOT submit any of these results to the STREAM benchmark results
+stress-ng-stream: Using CPU cache size of 16384K
+stress-ng-hash:         hash      hashes/sec chi squared
+stress-ng-hash:      adler32      3538363.72       0.98
+stress-ng-hash:       coffin     13150802.30       0.94
+stress-ng-hash:     coffin32     14741570.94       0.95
+stress-ng-hash:       crc32c      4488699.16       1.00
+stress-ng-hash:        djb2a      8157546.46       0.98
+stress-ng-hash:        fnv1a      7319715.18       1.00
+stress-ng-hash:       jenkin      7491141.93       0.93
+stress-ng-hash:        kandr      8829607.13       0.96
+stress-ng-hash:        knuth     12770151.83       1.00
+stress-ng-hash:     loselose     14815561.77       0.96
+stress-ng-hash:         mid5     77465233.48       0.95
+stress-ng-hash:     muladd32      8669200.17       1.01
+stress-ng-hash:     muladd64      8951661.81       0.96
+stress-ng-hash:    mulxror64     29362395.32       1.00
+stress-ng-hash:   murmur3_32     17159586.59       1.00
+stress-ng-hash:        nhash      9085645.44       0.96
+stress-ng-hash:          pjw      5516892.67       1.01
+stress-ng-prefetch: using a 16384 KB L3 cache, 34304 benchmark rounds
+stress-ng-prefetch: non-prefetch read rate @ 12.99 GB/s
+stress-ng-prefetch: best prefetch read rate @ 18.93 GB/s at offset 1984 (~97.63 nanoseconds)
+stress-ng-stream: memory rate: 10067.38 MB/sec, 4026.95 Mflop/sec (instance 0)
+stress-ng-hash:         sdbm      7748172.51       0.96
+stress-ng-hash:          x17      8182454.43       0.97
+stress-ng-hash:          xor     10382277.42       0.98
+process [9794] (stress-ng-stress-ng-plugin) aborted early, out of system resources
+stress-ng-sparsematrix: hash     322.6K     28072510.43 Get/s     12317229.69 Put/s
+stress-ng-sparsematrix: judy      85.7K     16557905.87 Get/s      4911255.07 Put/s
+stress-ng-sparsematrix: list     174.9K       578312.05 Get/s       332282.17 Put/s
+stress-ng-sparsematrix: mmap       1.9M     23032530.07 Get/s      1775352.47 Put/s
+stress-ng-sparsematrix: qhash    323.9K     19884761.79 Get/s     19438678.57 Put/s
+stress-ng-sparsematrix: rb       233.0K      9576747.77 Get/s      3514974.68 Put/s
+stress-ng-zlib: instance 0: compression ratio: 64.62% (1.34 MB/sec)
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+atomic         38646723     60.00    118.20      0.08    644076.75      326717.43
+branch          3398300     60.00     30.15      0.00     56637.81      112703.29
+bsearch           10333     59.90     30.01      0.00       172.50         344.31
+context          149197     60.00     17.68     14.77      2486.56        4598.91
+cpu               37274     60.00     29.51      0.00       621.19        1263.28
+crypt             34449     60.00     32.10      0.11       574.14        1069.83
+fp-error       34976124     60.00     32.71      0.02    582931.90     1068498.20
+funccall         110723     60.00     29.41      0.01      1845.34        3763.65
+funcret         4603668     60.00     31.95      0.03     76727.78      143916.48
+getrandom       1177583     60.00      0.17     30.61     19626.21       38251.51
+goto            7753018     60.00     31.36      0.00    129216.93      247200.24
+hash            2157705     60.10     21.68      7.01     35901.67       75197.99
+heapsort            131     60.00     32.70      0.18         2.18           3.98
+hsearch          139662     60.00     31.39      0.01      2327.69        4448.96
+ioport           536072     60.00     27.25      3.88      8934.41       17217.55
+judy                464     59.90     29.31      0.42         7.75          15.61
+list                381     60.00     31.65      0.03         6.35          12.03
+longjmp          470909     60.00     31.73      0.04      7848.48       14819.30
+lsearch             219     60.00     31.16      0.00         3.65           7.03
+matrix            97002     60.00     29.89      0.00      1616.70        3244.73
+matrix-3d         15892     60.01     30.11      0.05       264.84         526.82
+mergesort           609     60.00     30.76      0.17        10.15          19.69
+nop             6110461     60.00     34.21      0.23    101841.04      177419.44
+numa              27465     60.00     30.73      0.08       457.74         891.48
+opcode             3841     60.00      1.36      0.44        64.02        2143.43
+pkey           11199684     60.00      8.18     25.27    186661.28      334871.15
+prefetch            268     60.02     30.91      0.01         4.47           8.67
+qsort               234     60.00     31.31      0.12         3.90           7.44
+radixsort           493     60.00     29.72      0.00         8.22          16.59
+regs            1067552     60.00     29.52      0.00     17791.07       36163.20
+shellsort           504     60.00     29.43      0.06         8.40          17.09
+skiplist         178538     60.00     31.00      0.05      2975.63        5750.14
+sparsematrix       1119     60.10     30.73      1.02        18.62          35.25
+str             1400580     60.00     32.83      0.09     23343.00       42547.71
+stream              941     60.05     30.65      0.05        15.67          30.65
+syncload            321     60.00     19.13      1.98         5.35          15.21
+tree                 66     60.00     32.51      0.10         1.10           2.02
+tsearch             607     60.03     33.93      0.15        10.11          17.81
+uprobe         94098382     60.01      9.63     12.85   1568031.83     4184979.36
+vecfp             38190     60.02     30.04      0.01       636.31        1270.84
+vecmath          101957     60.00     31.47      0.08      1699.28        3231.52
+vecshuf           11785     60.01     30.90      0.01       196.38         381.27
+vecwide          598934     60.00     29.10      0.01      9982.20       20577.71
+wcs              825245     60.01     31.80      0.09     13752.08       25882.15
+zlib               1389     60.18     29.93      0.03        23.08          46.35
+miscellaneous metrics:
+longjmp           65.84 nanoseconds per longjmp call (average per stressor)
+stream         10067.38 memory rate (MB per sec) (average per stressor)
+stream          4026.95 memory rate (Mflop per sec) (average per stressor)
+successful run completed in 60.19s (1 min, 0.19 secs)
+
+IO
+
+setting to a 60 second run per stressor
+dispatching hogs: 1 aio, 1 aiol, 1 hdd, 1 io-uring, 1 rawdev, 1 readahead, 1 revio, 1 seek, 1 sync-file
+stress-ng-revio: average number of extents 91175.32
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+aio              263791     60.01      0.15      0.60      4396.10      351508.55
+aiol             102127     60.02      2.38      3.53      1701.46       17282.57
+hdd             1703936     60.06     36.47     23.57     28368.41       28378.64
+io-uring          23888     60.00      0.01      1.05       398.11       22574.67
+rawdev           111423     60.00      0.02      0.27      1857.02      384548.75
+readahead        584913     60.00      0.08     11.44      9747.91       50757.96
+revio          30726082     60.01      2.05     57.59    511987.94      515220.30
+seek                  0     60.00     14.28     45.73         0.00           0.00
+sync-file          2247     60.01      3.03      4.61        37.45         294.18
+miscellaneous metrics:
+aio             2311.19 async I/O signals per sec (average per stressor)
+successful run completed in 60.06s (1 min, 0.06 secs)
+
+Interrupt
+
+setting to a 60 second run per stressor
+dispatching hogs: 1 aio, 1 aiol, 1 alarm, 1 clock, 1 fault, 1 itimer, 1 kill, 1 nanosleep, 1 pidfd, 1 schedpolicy, 1 sigabrt, 1 sigchld, 1 sigfd, 1 sigfpe, 1 sigio, 1 signal, 1 signest, 1 sigpending, 1 sigpipe, 1 sigq, 1 sigrt, 1 sigsegv, 1 sigsuspend, 1 sigtrap, 1 sleep, 1 timer, 1 timerfd
+stress-ng-sigio: 25414.32 SIGIO signals/sec
+stress-ng-signest: 16 unique nested signals handled, HUP ILL QUIT ABRT FPE TERM XCPU XFSZ STKFLT PWR VTALRM USR1 USR2 TTOU TTIN WINCH
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+aio              571982     60.01      0.26      1.05      9532.13      439196.28
+aiol             127868     60.02      4.03      5.97      2130.34       12788.82
+alarm           2880100     60.00      2.64     11.90     48001.46      198119.53
+clock           1332325     60.00      4.39     25.06     22205.40       45236.72
+fault           1115160     60.00      1.24     42.59     18585.94       25442.03
+itimer            56825     60.00     14.99     40.73       947.08        1019.80
+kill             946841     60.00      1.92     53.00     15780.62       17241.89
+nanosleep        471014     60.00      4.24     11.66      7850.09       29624.55
+pidfd             45003     60.00      4.50      7.10       750.04        3880.91
+schedpolicy        1411     60.16      0.01      0.02        23.45       43383.35
+sigabrt             637     60.05      0.12      0.15        10.61        2347.22
+sigchld           45925     60.00      4.35      6.50       765.42        4232.40
+sigfd          65721564     60.00     13.26     87.97   1095357.45      649240.65
+sigfpe                0     60.00     29.98     26.04         0.00           0.00
+sigio          19251217     60.00      8.79     45.58    320852.26      354097.98
+signal         27366961     60.00      7.60     48.00    456116.05      492258.46
+signest        31640598     60.00      8.97     47.03    527342.52      564932.01
+sigpending     23362347     60.00     11.49     43.96    389372.50      421354.50
+sigpipe          164855     60.00      1.80      5.76      2747.58       21816.11
+sigq           39066514     60.00     15.81     54.94    651105.18      552160.47
+sigrt          38485043     60.00     25.53    169.45    641376.23      197375.31
+sigsegv        26762768     60.00     11.86     43.12    446046.15      486812.01
+sigsuspend     19042610     60.00     18.45    120.34    317355.95      137209.58
+sigtrap        33091199     60.00      5.86     48.77    551519.89      605772.27
+sleep           2639875     60.03     13.92     60.47     43976.82       35486.88
+timer           5856018     60.00      3.22     18.78     97600.04      266142.27
+timerfd        85952512     60.00      8.94     45.34   1432522.60     1583659.48
+miscellaneous metrics:
+aio             1113.17 async I/O signals per sec (average per stressor)
+fault          18586.86 minor page faults per sec (average per stressor)
+fault          18586.06 major page faults per sec (average per stressor)
+successful run completed in 60.16s (1 min, 0.16 secs)
+
+File System
+
+setting to a 60 second run per stressor
+dispatching hogs: 1 access, 1 binderfs, 1 chattr, 1 chdir, 1 chmod, 1 chown, 1 copy-file, 1 dentry, 1 dir, 1 dirdeep, 1 dirmany, 1 dnotify, 1 dup, 1 eventfd, 1 fallocate, 1 fanotify, 1 fcntl, 1 fiemap, 1 file-ioctl, 1 filename, 1 flock, 1 fpunch, 1 fstat, 1 getdent, 1 handle, 1 inode-flags, 1 inotify, 1 io, 1 iomix, 1 ioprio, 1 lease, 1 link, 1 locka, 1 lockf, 1 lockofd, 1 mknod, 1 open, 1 procfs, 1 rename, 1 symlink, 1 sync-file, 1 touch, 1 utime, 1 verity, 1 xattr
+stress-ng-binderfs: mount failed on binderfs at ./tmp-stress-ng-binderfs-193150-0, errno=19 (No such device), skipping stress test
+stress-ng-io: this is a legacy I/O sync stressor, consider using iomix instead
+stress-ng-open: using a maximum of 1048576 file descriptors
+stress-ng-verity: verity is not supported on the file system or by the kernel, skipping stress test
+stress-ng-fpunch: punched file had 2079 extents
+process [193150] (stress-ng-stress-ng-binderfs) aborted early, out of system resources
+stress-ng-dentry: 373191 dentries allocated
+stress-ng-fanotify: 789454 open, 263933 close write, 541135 close nowrite, 541915 access, 45729 modify, 0 rename
+stress-ng-dirdeep: note: specifying a larger --dirdeep or --dirdeep-dirs settings or running the stressor for longer will use more inodes
+stress-ng-dirmany: 58.21% create time, 41.79% remove time
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+access           195000     60.00      3.78     80.73      3249.84        2307.37
+chattr              220     60.01      0.01      0.40         3.67         540.94
+chdir              2435     60.50      3.77     49.32        40.25          45.87
+chmod              3922     60.01      0.07      1.39        65.36        2689.56
+chown              4223     60.01      0.01      0.19        70.37       20759.90
+copy-file          2546     60.03      0.02      1.39        42.41        1796.96
+dentry           178176     60.37      0.81      9.94      2951.25       16575.70
+dir               40964     60.41      1.69     15.86       678.09        2334.17
+dirdeep            2032     60.93      0.02      2.54        33.35         793.71
+dirmany          219395     61.88      0.23      9.55      3545.24       22438.85
+dnotify           23128     60.00      0.25      8.75       385.47        2568.39
+dup                9704     60.00      1.57      2.27       161.73        2524.04
+eventfd         3735482     60.00      5.09     34.95     62257.66       93306.12
+fallocate           101     60.00      0.01      0.18         1.68         517.59
+fanotify         800143     60.13      0.26     13.38     13306.89       58663.08
+fcntl            559563     60.00      2.25     15.76      9326.02       31069.65
+fiemap           135180     60.01      0.25     70.02      2252.65        1923.94
+file-ioctl        74186     60.00      0.18     46.11      1236.42        1602.87
+filename          38202     60.01      0.76     20.00       636.61        1839.76
+flock          71734501     60.01      8.44     36.37   1195398.38     1600762.50
+fpunch             5152     60.00      0.08     22.11        85.86         232.12
+fstat             17315     60.00      0.62      4.78       288.58        3203.79
+getdent         4973487     60.00      2.94     52.82     82891.39       89182.07
+handle          4111531     60.00      4.24     51.52     68525.35       73734.19
+inode-flags           0     60.04      0.04      6.64         0.00           0.00
+inotify             110     60.01      0.01      0.22         1.83         462.01
+io                 1225     60.03      0.01      0.14        20.41        7902.00
+iomix            492267     60.03      1.72     11.51      8200.72       37208.82
+ioprio              224     60.06      0.01      0.34         3.73         652.85
+lease           1416892     60.01      2.65     53.95     23611.68       25031.37
+link                159     60.13      2.58     30.48         2.64           4.81
+locka         137433236     60.01     30.59     84.03   2290249.53     1199027.60
+lockf            859594     60.01      0.32     20.03     14324.70       42239.35
+lockofd       136977289     60.00     31.21     82.99   2282924.11     1199392.40
+mknod              9807     60.01      0.07      0.76       163.42       11763.69
+open             264250     62.79      0.39     13.14      4208.68       19524.94
+procfs            19045     60.03      9.86    256.06       317.26          71.62
+rename            11850     60.01      0.07      0.53       197.46       19792.92
+symlink              35     60.24      0.77     13.11         0.58           2.52
+sync-file          1232     60.03      2.19      3.51        20.52         216.36
+touch            674633     60.03      1.48     27.22     11238.99       23505.21
+utime           1374473     60.01      1.38     40.15     22905.15       33095.79
+xattr               268     60.01      1.71     40.77         4.47           6.31
+miscellaneous metrics:
+lease           4992.89 lease sigio interrupts per sec (average per stressor)
+successful run completed in 62.80s (1 min, 2.80 secs)
+
+Network
+
+setting to a 60 second run per stressor
+dispatching hogs: 1 dccp, 1 epoll, 1 icmp-flood, 1 netdev, 1 ping-sock, 1 rawpkt, 1 rawsock, 1 rawudp, 1 sctp, 1 sock, 1 sockabuse, 1 sockdiag, 1 sockfd, 1 sockpair, 1 sockmany, 1 tun, 1 udp, 1 udp-flood
+stress-ng-dccp: DCCP protocol not supported, skipping stressor
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+epoll            621931     60.29      0.86     10.39     10315.85       55253.64
+icmp-flood      8067360     60.00      2.12     55.88    134455.97      139094.50
+netdev         12308015     60.00      9.73     41.15    205133.54      241908.92
+ping-sock       9673727     60.00      1.20     58.73    161228.75      161416.17
+rawpkt         13230140     60.01      4.87    114.07    220453.21      111237.24
+rawsock        13893550     60.00      2.97     75.46    231558.72      177164.70
+rawudp          4201758     59.00      2.89     75.87     71216.77       53353.53
+sctp             521731     59.00      0.09      2.92      8842.93      173379.10
+sock              42662     59.00      2.74     60.64       723.08         673.11
+sockabuse         17142     59.00      1.43     15.64       290.54        1004.41
+sockdiag              0     59.00      0.66     12.42         0.00           0.00
+sockfd         13503971     59.73      5.17     80.79    226095.71      157101.41
+sockpair       37699585     59.29      5.64    112.02    635859.24      320411.16
+sockmany          51449     59.12      0.11     58.16       870.19         882.94
+tun                2266     59.00      0.52      4.34        38.41         466.42
+udp            10974558     59.00      3.20     73.30    186010.72      143475.15
+udp-flood       6820665     59.00      0.92     56.08    115605.44      119648.84
+miscellaneous metrics:
+sockabuse       4648.63 messages sent per sec (average per stressor)
+successful run completed in 60.73s (1 min, 0.73 secs)
+
+OS
+
+setting to a 60 second run per stressor
+apparmor: stressor will be skipped, AppArmor is not available
+exec stressor must not run as root, skipping the stressor
+spawn stressor must not run as root, skipping the stressor
+x86syscall stressor will be skipped, not a recognised Intel CPU
+dispatching hogs: 1 access, 1 af-alg, 1 aio, 1 aiol, 1 alarm, 1 bad-altstack, 1 bigheap, 1 binderfs, 1 brk, 1 cap, 1 chattr, 1 chdir, 1 chmod, 1 chown, 1 chroot, 1 clock, 1 clone, 1 close, 1 copy-file, 1 cyclic, 1 daemon, 1 dccp, 1 dentry, 1 dev, 1 dev-shm, 1 dir, 1 dirdeep, 1 dirmany, 1 dnotify, 1 dup, 1 dynlib, 1 efivar, 1 enosys, 1 env, 1 epoll, 1 eventfd, 1 exit-group, 1 fallocate, 1 fanotify, 1 fault, 1 fcntl, 1 fiemap, 1 fifo, 1 file-ioctl, 1 filename, 1 flock, 1 fork, 1 fpunch, 1 fstat, 1 full, 1 futex, 1 get, 1 getdent, 1 getrandom, 1 handle, 1 hdd, 1 icmp-flood, 1 idle-page, 1 inode-flags, 1 inotify, 1 io, 1 iomix, 1 ioprio, 1 io-uring, 1 itimer, 1 kcmp, 1 key, 1 kill, 1 klog, 1 kvm, 1 landlock, 1 lease, 1 link, 1 loadavg, 1 locka, 1 lockf, 1 lockofd, 1 loop, 1 madvise, 1 malloc, 1 memfd, 1 memhotplug, 1 mincore, 1 mknod, 1 mlock, 1 mmap, 1 mmapaddr, 1 mmapfixed, 1 mmapfork, 1 mmaphuge, 1 mmapmany, 1 mprotect, 1 mq, 1 mremap, 1 msg, 1 msync, 1 msyncmany, 1 munmap, 1 mutex, 1 nanosleep, 1 netlink-proc, 1 netlink-task, 1 nice, 1 null, 1 numa, 1 opcode, 1 open, 1 pageswap, 1 pci, 1 personality, 1 pidfd, 1 ping-sock, 1 pipe, 1 pipeherd, 1 plugin, 1 poll, 1 prctl, 1 procfs, 1 pthread, 1 ptrace, 1 pty, 1 quota, 1 ramfs, 1 rawpkt, 1 rawsock, 1 rawudp, 1 readahead, 1 reboot, 1 remap, 1 rename, 1 resched, 1 resources, 1 revio, 1 rlimit, 1 rmap, 1 rtc, 1 schedpolicy, 1 seal, 1 seccomp, 1 seek, 1 sem, 1 sem-sysv, 1 sendfile, 1 session, 1 set, 1 shm, 1 shm-sysv, 1 sigabrt, 1 sigchld, 1 sigfd, 1 sigfpe, 1 sigio, 1 signal, 1 signest, 1 sigpending, 1 sigpipe, 1 sigq, 1 sigrt, 1 sigsegv, 1 sigsuspend, 1 sigtrap, 1 sleep, 1 sock, 1 sockabuse, 1 sockdiag, 1 sockfd, 1 sockpair, 1 sockmany, 1 splice, 1 swap, 1 switch, 1 symlink, 1 sync-file, 1 sysbadaddr, 1 syscall, 1 sysinfo, 1 sysfs, 1 tee, 1 timer, 1 timerfd, 1 tlb-shootdown, 1 tmpfs, 1 touch, 1 tun, 1 udp, 1 udp-flood, 1 unshare, 1 urandom, 1 userfaultfd, 1 usersyscall, 1 utime, 1 vdso, 1 verity, 1 vfork, 1 vforkmany, 1 vm, 1 vm-addr, 1 vm-rw, 1 vm-segv, 1 vm-splice, 1 wait, 1 xattr, 1 yield, 1 zero, 1 zombie
+stress-ng-af-alg: 45 cryptographic algorithms found in /proc/crypto
+stress-ng-af-alg: 127 cryptographic algorithms in total (with defconfigs)
+stress-ng-af-alg: 10 cryptographic algorithms are internal and may be unused
+stress-ng-dccp: DCCP protocol not supported, skipping stressor
+stress-ng-efivar: cannot read EFI vars in /sys/firmware/efi/vars
+stress-ng-efivar: WARNING: finished prematurely after just 0.50s
+stress-ng-io: this is a legacy I/O sync stressor, consider using iomix instead
+stress-ng-loadavg: attempting to create 65536 pthreads per worker (65536 in total)
+stress-ng-binderfs: mount failed on binderfs at ./tmp-stress-ng-binderfs-1686373-0, errno=19 (No such device), skipping stress test
+stress-ng-open: using a maximum of 1048576 file descriptors
+stress-ng-kvm: KVM kernel API version 12
+stress-ng-numa: system has 1 of a maximum 4 memory NUMA nodes
+stress-ng-splice: using direct write to pipe and not splicing from /dev/zero as this is not supported in this kernel
+stress-ng-syscall: using method 'fast75'
+stress-ng-plugin: plugin shared library failed to open, skipping stressor
+stress-ng-quota: WARNING: finished prematurely after just 0.53s
+stress-ng-vdso: exercising vDSO functions: getcpu time gettimeofday clock_gettime
+stress-ng-yield: limiting to 24 child yielders (instance 0)
+stress-ng-netlink-proc: kernel does not support netlink, errno=93 (Protocol not supported)
+stress-ng-netlink-task: failed to get family id
+stress-ng-verity: verity is not supported on the file system or by the kernel, skipping stress test
+stress-ng-seccomp: fork failed, errno=11 (Resource temporarily unavailable)
+stress-ng-seccomp: WARNING: finished prematurely after just 15.13s
+stress-ng-enosys: WARNING: finished prematurely after just 15.24s
+stress-ng-switch: (pipe) 17064.34 nanoseconds per context switch (based on parent run time)
+stress-ng-swap: 6729 of 8285 (81.22%) pages were swapped out
+stress-ng-revio: average number of extents 88946.50
+stress-ng-sigio: 5126.94 SIGIO signals/sec
+stress-ng-dentry: 84633 dentries allocated
+stress-ng-pthread: maximum of 1024 concurrent pthreads created
+stress-ng-pthread: 99.75% of iterations could not reach requested 1024 threads (instance 0)
+stress-ng-signest: 16 unique nested signals handled, HUP ILL QUIT ABRT FPE TERM XCPU XFSZ STKFLT PWR VTALRM USR1 USR2 TTOU TTIN WINCH
+stress-ng-zombie: created a maximum of 6749 zombies
+stress-ng-cyclic: sched SCHED_DEADLINE: 100000 ns delay, 10000 samples
+stress-ng-cyclic:   mean: 5464.12 ns, mode: 3250 ns
+stress-ng-cyclic:   min: 2020 ns, max: 1613173 ns, std.dev. 20380.30
+stress-ng-cyclic: latency percentiles:
+stress-ng-cyclic:   25.00%:       3270 ns
+stress-ng-cyclic:   50.00%:       3880 ns
+stress-ng-cyclic:   75.00%:       5320 ns
+stress-ng-cyclic:   90.00%:       8100 ns
+stress-ng-cyclic:   95.40%:      12360 ns
+stress-ng-cyclic:   99.00%:      19080 ns
+stress-ng-cyclic:   99.50%:      23800 ns
+stress-ng-cyclic:   99.90%:      95350 ns
+stress-ng-cyclic:   99.99%:    1613173 ns
+stress-ng-fpunch: punched file had 2054 extents
+stress-ng-dev: 82 of 125 devices opened and exercised
+stress-ng-pipeherd: 0.12 context switches per bogo operation (154317.53 per second)
+stress-ng-vdso: 351.21 nanoseconds per call (excluding 33.44 nanoseconds test overhead)
+stress-ng-fanotify: 156333 open, 45320 close write, 99291 close nowrite, 97007 access, 10446 modify, 0 rename
+stress-ng-dirdeep: note: specifying a larger --dirdeep or --dirdeep-dirs settings or running the stressor for longer will use more inodes
+stress-ng-dirmany: 58.79% create time, 41.21% remove time
+stress-ng-syscall: 271 system call tests, 203 fastest tests exercised
+stress-ng-syscall: Top 10 fastest system calls (timings in nanoseconds):
+stress-ng-syscall:               System Call   Avg (ns)   Min (ns)
+stress-ng-syscall:              gettimeofday       60.0         50
+stress-ng-syscall:                   getpgrp      150.0        140
+stress-ng-syscall:          timer_getoverrun      165.0        160
+stress-ng-syscall:                      time      175.0         70
+stress-ng-syscall:           set_robust_list      210.0        200
+stress-ng-syscall:                     close      230.0        210
+stress-ng-syscall:              timer_delete      235.0        230
+stress-ng-syscall:                mq_setattr      250.0        240
+stress-ng-syscall:                    gettid      255.0        240
+stress-ng-syscall:    sched_get_priority_min      260.0        200
+process [1686373] (stress-ng-stress-ng-binderfs) aborted early, out of system resources
+process [1686607] (stress-ng-stress-ng-netlink-proc) aborted early, out of system resources
+process [1686608] (stress-ng-stress-ng-netlink-task) terminated with an error, exit status=2 (stressor failed)
+process [1686628] (stress-ng-stress-ng-plugin) aborted early, out of system resources
+process [1686700] (stress-ng-stress-ng-sysbadaddr) aborted early, out of system resources
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+access            10326     60.17      0.32      5.15       171.63        1887.72
+aio               52969     60.01      0.04      0.29       882.72      158098.01
+aiol              11455     60.19      0.44      1.21       190.32        6952.65
+alarm           1101001     60.17      1.09      4.88     18299.57      184276.49
+bad-altstack          1     60.17      0.00      0.00         0.02         699.30
+bigheap          160112     62.82      0.33      6.08      2548.59       24994.12
+brk             2607284     62.50      0.52      7.77     41716.31      314743.78
+cap              829054     60.00      0.73      5.03     13817.56      144056.89
+chattr               83     60.03      0.01      0.18         1.38         429.69
+chdir                41     61.18      0.10      1.47         0.67          26.09
+chmod              1527     60.03      0.03      0.49        25.44        2931.33
+chown              1806     60.01      0.01      0.10        30.09       17841.27
+chroot              278     60.22      0.07      0.19         4.62        1086.00
+clock            167929     60.01      0.57      3.34      2798.55       42945.58
+clone               428     60.22      0.01      1.59         7.11         267.43
+close             25294     60.81      0.23      0.94       415.93       21655.17
+copy-file           767     60.02      0.01      0.59        12.78        1277.68
+cyclic           526934     60.16      0.51      1.41      8758.23      274755.61
+daemon             9671     60.00      0.01      0.02       161.18      331561.99
+dentry            26624     60.16      0.12      1.49       442.59       16511.81
+dev                  82     60.21      1.28      4.19         1.36          15.01
+dev-shm               9     62.51      0.00      5.32         0.14           1.69
+dir                8079     61.25      0.22      2.25       131.89        3266.20
+dirdeep            2032     61.44      0.02      2.16        33.07         932.78
+dirmany           29065     61.47      0.06      1.41       472.80       19804.02
+dnotify              76      0.00      0.00      0.00         0.00           0.00
+dup             2292588     60.02      1.37      3.51     38196.42      469872.35
+dynlib             8137     60.09      1.33      3.95       135.41        1541.97
+efivar                0      0.00      0.00      0.00         0.00           0.00
+enosys               56     14.64      0.02      0.06         3.83         745.52
+env                 332     60.32      0.99      1.13         5.50         156.44
+epoll             72443     60.22      0.34      2.52      1202.98       25261.63
+eventfd          757386     60.16      1.14      6.44     12588.85       99932.58
+exit-group          103     60.00      0.14      1.33         1.72          69.86
+fallocate            41     60.01      0.00      0.11         0.68         346.18
+fanotify         157861     60.69      0.05      2.67      2600.90       58074.75
+fault             15591     60.00      0.03      1.20       259.83       12628.64
+fcntl             55370     60.03      0.25      1.38       922.40       34113.80
+fiemap            52809     60.16      0.09      9.36       877.78        5588.04
+fifo            2737368     60.18      0.60      8.20     45485.88      311126.77
+file-ioctl         2161     60.04      0.01      2.71        35.99         794.42
+filename           2770     60.17      0.07      1.57        46.04        1692.80
+flock          13912636     60.21      1.60      6.30    231070.85     1761119.25
+fork                232     60.16      0.05      0.29         3.86         676.89
+fpunch              570     60.17      0.02      6.20         9.47          91.67
+fstat              7919     60.19      0.15      1.59       131.57        4545.55
+full             803617     60.03      2.37     10.83     13386.73       60888.43
+futex            620553     60.16      0.91      3.42     10314.99      143459.23
+get                 180     60.00      0.01      1.35         3.00         132.80
+getdent          464781     60.02      0.35      6.13      7743.67       71757.90
+getrandom        253740     60.00      0.04      6.88      4229.00       36661.89
+handle           587339     60.22      0.66      7.03      9753.11       76442.59
+hdd               39250     60.02      1.42      1.46       653.97       13600.76
+icmp-flood      1561786     60.02      0.41      6.88     26021.04      214194.28
+idle-page           789     60.15      0.00      2.99        13.12         264.18
+inode-flags           0     60.07      0.02      2.89         0.00           0.00
+inotify               2     60.13      0.01      0.02         0.03          61.94
+io                   27     60.04      0.00      0.03         0.45         798.11
+iomix            129373     60.17      1.15      6.10      2150.05       17865.02
+ioprio               65     60.02      0.01      2.05         1.08          31.66
+io-uring           6560     60.03      0.01      0.63       109.29       10206.84
+itimer             4735     60.03      1.21      3.33        78.88        1041.83
+kcmp             963868     60.19      1.14      4.96     16012.62      158123.57
+key                 709     60.01      0.44      3.28        11.81         190.62
+kill               3140     60.21      0.01      8.38        52.15         374.30
+klog               8305     60.07      0.00      7.18       138.26        1155.42
+kvm                  32     60.30      0.03      0.19         0.53         143.84
+landlock             16     60.30      0.04      0.20         0.27          67.36
+lease             81022     60.16      0.37      5.58      1346.81       13601.05
+link                  8     60.30      0.16      1.81         0.13           4.07
+loadavg          995876     61.17      0.84      6.49     16279.75      135847.35
+locka          11943063     60.05      2.19      7.63    198872.50     1215421.95
+lockf            117107     60.20      0.04      2.30      1945.28       50024.88
+lockofd        13146131     60.21      2.46      8.42    218340.81     1208780.61
+loop                  7     60.19      0.00      0.01         0.12         728.71
+madvise             339     60.05      0.54      7.99         5.64          39.74
+malloc           302061     60.42      2.36      4.87      4999.64       41770.07
+memfd                18     60.41      0.14      5.19         0.30           3.38
+memhotplug           46     60.10      0.00      1.55         0.77          29.71
+mincore           11567     60.06      0.85      8.16       192.59        1284.35
+mknod               163     60.04      0.00      0.04         2.72        3784.27
+mlock             57345     61.50      0.02      3.73       932.44       15314.93
+mmap                  3     60.22      1.56      3.05         0.05           0.65
+mmapaddr         331964     60.17      0.36      3.84      5517.14       79028.02
+mmapfixed           109     60.20      1.36      5.26         1.81          16.48
+mmapfork             95     60.21      2.89     32.70         1.58           2.67
+mmaphuge           1281     60.16      0.34      6.37        21.29         190.81
+mmapmany         506987     60.76      0.34      6.31      8344.77       76301.56
+mprotect       11882395     60.24      3.40     16.42    197249.32      599380.27
+mq              2100357     60.16      1.53      5.89     34913.70      282858.04
+mremap               47     60.25      0.00      9.41         0.78           4.99
+msg             2225610     60.15      0.74      4.86     37003.89      397682.53
+msync              1606     60.02      0.01      0.19        26.76        7821.56
+msyncmany           923     60.28      0.15      3.48        15.31         254.39
+munmap            47929     60.15      0.11      0.33       796.79      109127.71
+mutex          40316057     60.00     15.61     84.65    671933.80      402119.42
+nanosleep        306880     60.00      2.60      7.03      5114.54       31866.38
+nice               1705     60.12      1.21      3.16        28.36         390.53
+null             789900     60.01      0.79      4.48     13163.68      149975.31
+numa               3014     60.11      3.74      0.15        50.14         773.79
+opcode              240     60.20      0.06      0.21         3.99         882.52
+open              40960     60.97      0.08      1.80       671.84       21885.63
+pageswap         196380     60.84      0.18      7.46      3227.62       25704.69
+pci                9860     60.04      0.21      4.49       164.24        2099.47
+personality      798071     60.00      2.57      2.64     13300.19      153041.17
+pidfd               251     60.23      0.03      0.23         4.17         956.94
+ping-sock       1340791     60.02      0.14      4.87     22340.00      267914.61
+pipe            2082794     60.17      1.57      4.79     34616.04      327253.18
+pipeherd       78471274     60.28      8.43     49.19   1301750.34     1361782.94
+poll            1098725     60.18      0.94      4.25     18257.66      211831.81
+prctl               270     60.15      0.06      0.22         4.49         967.03
+procfs             6235     60.20      1.29     13.54       103.56         420.39
+pthread           56016     60.05      3.89      5.58       932.78        5913.26
+ptrace          1624750     60.18      0.80      6.12     26996.68      234604.24
+pty                  39     60.41      0.40      7.70         0.65           4.82
+quota                 1      0.00      0.00      0.00       325.85        1490.31
+ramfs                45     60.20      0.00      0.06         0.75         729.68
+rawpkt           477892     60.16      0.40      5.48      7943.04       81201.17
+rawsock         1079697     60.14      0.57      5.55     17952.21      176304.90
+rawudp           195995     60.14      0.63      5.20      3258.93       33598.26
+readahead         44033     60.05      0.02      2.57       733.27       17011.42
+reboot               50     60.26      0.01      0.10         0.83         448.87
+remap              1068     60.04      0.37      9.32        17.79         110.31
+rename             3957     60.05      0.03      0.21        65.89       16279.73
+resched         4781027     60.30      0.57      4.02     79283.75     1041638.73
+resources          3710     60.19      7.14     76.57        61.64          44.32
+revio            533673     60.05      0.08      3.07      8887.09      169773.07
+rlimit            46583     60.14      0.52      4.06       774.52       10166.61
+rmap                928     60.19      0.28      5.32        15.42         165.65
+rtc               14258     60.06      0.07      3.32       237.40        4206.33
+schedpolicy         655     60.22      0.00      0.02        10.88       33670.90
+seal             302708     60.04      0.38      2.77      5041.55       96030.16
+seccomp              31     14.62      0.00      0.12         2.12         245.60
+seek                  0     60.00      0.04      1.73         0.00           0.00
+sem             2753286     60.01      1.11      2.32     45882.14      801905.62
+sem-sysv        7384648     60.17      0.97      5.84    122729.74     1084603.71
+sendfile         168527     60.03      0.02      2.38      2807.45       70207.94
+session             219     60.17      0.10      0.48         3.64         379.85
+set             1560876     60.00      6.93     48.35     26014.59       28236.77
+shm                 120     60.26      0.10      1.90         1.99          59.95
+shm-sysv            390     60.16      0.02      0.96         6.48         398.88
+sigabrt               3     60.82      0.00      0.00         0.05        1553.60
+sigchld             246     60.00      0.03      0.19         4.10        1127.56
+sigfd           2649530     60.16      1.63      5.58     44039.58      367324.20
+sigfpe                0     60.10      1.36      1.28         0.00           0.00
+sigio           3049107     60.17      1.73      9.16     50675.27      279847.99
+signal          4443355     60.03      1.32      7.46     74024.02      506218.37
+signest         3257537     60.08      0.91      4.74     54217.16      576335.19
+sigpending      2088082     60.00      0.93      3.83     34801.36      438742.28
+sigpipe            2573     60.08      0.06      0.73        42.82        3242.21
+sigq            5406789     60.15      2.53      8.89     89884.42      473299.05
+sigrt           6335377     60.26      1.49     12.14    105133.88      464561.90
+sigsegv         1035506     60.00      0.41      1.72     17258.33      486440.81
+sigsuspend      1412996     60.18      2.90     12.08     23481.34       94286.68
+sigtrap         5104241     60.00      0.98      7.07     85069.13      634074.29
+sleep           2377465     60.04     12.39     58.46     39598.36       33553.18
+sock                375     60.15      0.03      0.65         6.23         549.97
+sockabuse          7738     60.15      0.65      6.31       128.64        1111.86
+sockdiag              0     60.00      0.03      0.55         0.00           0.00
+sockfd          1048508     61.35      1.00      9.99     17090.01       95412.50
+sockpair        3306574     61.50      0.57     12.54     53765.29      252207.17
+sockmany          15034     60.42      0.02      3.44       248.83        4345.10
+splice           242291     60.00      0.19      4.78      4038.18       48760.26
+swap                 60     60.05      0.00      0.15         1.00         393.82
+switch          3515549     60.16      1.86      8.49     58441.06      339708.25
+symlink               2     60.51      0.09      0.97         0.03           1.88
+sync-file           366     60.05      0.68      1.08         6.10         208.11
+sysbadaddr           45     14.74      0.01      0.03         3.05        1053.44
+syscall             493     62.06      0.01      0.02         7.94       16595.42
+sysinfo           11012     60.01      0.16      2.48       183.51        4174.21
+sysfs               215     60.18      1.05      1.23         3.57          94.21
+tee              150904     60.14      0.21      5.82      2509.10       25052.99
+timer           1233821     60.01      0.80      3.77     20561.31      269886.63
+timerfd         7319552     60.05      0.83      4.14    121884.20     1472199.47
+tlb-shootdown       119     60.08      0.32      1.34         1.98          71.94
+tmpfs                 2     60.45      1.02      2.25         0.03           0.61
+touch            104371     60.11      0.26      4.86      1736.19       20349.46
+tun                  10     60.18      0.00      0.07         0.17         143.31
+udp              945597     60.07      0.54      6.28     15741.02      138620.87
+udp-flood        898575     59.92      0.17      3.91     14997.38      220565.82
+unshare             262     60.12      0.14      0.55         4.36         380.63
+urandom           96820     59.99      0.06      3.56      1613.94       26764.47
+userfaultfd      919941     60.00      0.46      2.72     15332.33      289420.41
+usersyscall      773967     60.00      0.47      2.48     12899.50      262037.12
+utime             75617     60.00      0.09      2.08      1260.25       34860.39
+vdso          156269764     60.25      2.41      0.06   2593823.43    63191460.26
+vfork              1222     60.07      0.10      0.84        20.34        1299.68
+vforkmany          1416     60.00      0.02      0.08        23.60       13242.18
+vm               298228     60.55      4.44      2.79      4925.27       41264.84
+vm-addr              35     62.50      9.64      0.99         0.56           3.29
+vm-rw               895     60.13      0.01      5.90        14.88         151.47
+vm-segv             219     60.09      0.05      0.29         3.64         642.62
+vm-splice       1793680     60.00      1.85      2.28     29894.65      434997.08
+wait              31372     60.14      0.51      5.99       521.64        4828.06
+xattr                13     60.02      0.11      2.13         0.22           5.82
+yield         345414334     60.25     38.74    102.31   5732840.25     2448921.82
+zero             186064     60.03      0.50      4.26      3099.66       39112.63
+zombie             6749     60.13      0.94      2.08       112.23        2233.29
+miscellaneous metrics:
+aio              192.20 async I/O signals per sec (average per stressor)
+fault            260.83 minor page faults per sec (average per stressor)
+fault            260.03 major page faults per sec (average per stressor)
+lease             13.27 lease sigio interrupts per sec (average per stressor)
+pipeherd           0.12 context switches per bogo op (average per stressor)
+pipeherd      154317.53 context switches per second (average per stressor)
+sockabuse       2066.93 messages sent per sec (average per stressor)
+vdso             351.21 nanoseconds per call (average per stressor)
+dnotify instance 0 corrupted bogo-ops counter, 76 vs 0
+dnotify instance 0 hash error in bogo-ops counter and run flag, 2088124584 vs 0
+metrics-check: stressor metrics corrupted, data is compromised
+unsuccessful run completed in 62.83s (1 min, 2.83 secs)
+
+PIPE
+
+setting to a 60 second run per stressor
+dispatching hogs: 1 fifo, 1 pipe, 1 pipeherd, 1 sendfile, 1 splice, 1 tee, 1 vm-splice
+stress-ng-splice: using direct write to pipe and not splicing from /dev/zero as this is not supported in this kernel
+stress-ng-pipeherd: 1.00 context switches per bogo operation (969617.84 per second)
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+fifo           65877196     60.00     15.88    249.61   1097948.91      248138.96
+pipe           82369837     60.00     24.57     82.69   1372826.96      767946.22
+pipeherd       58169528     60.01     23.38    122.86    969401.95      397750.10
+sendfile        7847251     60.01      0.37     59.63    130772.24      130788.50
+splice          7601771     60.00      3.97     56.03    126696.11      126696.92
+tee             4255888     60.00      3.75    104.36     70931.20       39364.25
+vm-splice      32690366     60.00     25.59     34.41    544839.23      544844.47
+miscellaneous metrics:
+pipeherd           1.00 context switches per bogo op (average per stressor)
+pipeherd      969617.84 context switches per second (average per stressor)
+successful run completed in 60.10s (1 min, 0.10 secs)
+
+Scheduler
+
+setting to a 60 second run per stressor
+exec stressor must not run as root, skipping the stressor
+spawn stressor must not run as root, skipping the stressor
+dispatching hogs: 1 affinity, 1 clone, 1 close, 1 cyclic, 1 daemon, 1 dnotify, 1 eventfd, 1 exit-group, 1 fanotify, 1 fault, 1 fifo, 1 fork, 1 futex, 1 hrtimers, 1 inotify, 1 kill, 1 loadavg, 1 mmapfork, 1 mq, 1 msg, 1 mutex, 1 nanosleep, 1 netlink-proc, 1 netlink-task, 1 nice, 1 poll, 1 pthread, 1 resched, 1 schedpolicy, 1 sem, 1 sem-sysv, 1 session, 1 sleep, 1 softlockup, 1 switch, 1 tee, 1 vfork, 1 vforkmany, 1 wait, 1 yield, 1 zombie
+stress-ng-loadavg: attempting to create 65536 pthreads per worker (65536 in total)
+stress-ng-yield: limiting to 24 child yielders (instance 0)
+stress-ng-netlink-task: failed to get family id
+stress-ng-softlockup: for best results, run with at least 24 instances of this stressor
+stress-ng-netlink-proc: kernel does not support netlink, errno=93 (Protocol not supported)
+stress-ng-hrtimers: hrtimer signals at 0.903 MHz
+stress-ng-cyclic: sched SCHED_DEADLINE: 100000 ns delay, 10000 samples
+stress-ng-cyclic:   mean: 20831.27 ns, mode: 2690 ns
+stress-ng-cyclic:   min: 1890 ns, max: 3156498 ns, std.dev. 122794.88
+stress-ng-cyclic: latency percentiles:
+stress-ng-cyclic:   25.00%:       3020 ns
+stress-ng-cyclic:   50.00%:       3970 ns
+stress-ng-cyclic:   75.00%:       6020 ns
+stress-ng-cyclic:   90.00%:      10710 ns
+stress-ng-cyclic:   95.40%:      48411 ns
+stress-ng-cyclic:   99.00%:     418982 ns
+stress-ng-cyclic:   99.50%:     871523 ns
+stress-ng-cyclic:   99.90%:    1975275 ns
+stress-ng-cyclic:   99.99%:    3156498 ns
+stress-ng-pthread: maximum of 1024 concurrent pthreads created
+stress-ng-pthread: 99.94% of iterations could not reach requested 1024 threads (instance 0)
+stress-ng-switch: (pipe) 9177.12 nanoseconds per context switch (based on parent run time)
+stress-ng-zombie: created a maximum of 8192 zombies
+stress-ng-fanotify: 204390 open, 183397 close write, 107186 close nowrite, 107129 access, 173049 modify, 0 rename
+process [1959450] (stress-ng-stress-ng-netlink-proc) aborted early, out of system resources
+process [1959456] (stress-ng-stress-ng-netlink-task) terminated with an error, exit status=2 (stressor failed)
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+affinity          68149     60.04      0.10      0.24      1135.13      199668.34
+clone              1234     60.03      0.03     10.00        20.56         123.08
+close             48569     60.01      1.55      6.45       809.34        6066.15
+cyclic           507676     60.01      0.81      1.48      8459.45      222128.01
+daemon            25681     60.00      0.02      0.07       428.02      303529.22
+dnotify           22478     60.00      0.27     15.91       374.63        1389.80
+eventfd         1234115     60.01      2.21     12.52     20564.59       83818.38
+exit-group          857     60.00      0.42      8.50        14.28          96.07
+fanotify         205009     60.18      0.47     17.61      3406.71       11339.61
+fault            181605     60.01      0.40     18.35      3026.14        9688.75
+fifo            7648291     60.01      2.15     21.77    127445.96      319738.23
+fork               2086     60.01      0.27      5.53        34.76         359.08
+futex           5612142     60.01      4.03     16.76     93516.45      269962.30
+hrtimers       54191205     60.02     46.17    219.71    902907.47      203824.32
+inotify              30     60.03      0.01      0.07         0.50         414.10
+kill              12446     60.01      0.04     28.68       207.39         433.31
+loadavg         2406710     60.31      2.87     19.25     39905.48      108811.46
+mmapfork             18     60.12      7.80     51.83         0.30           0.30
+mq              5450561     60.01      3.72     14.66     90823.82      296462.39
+msg             4456510     60.01      1.44      9.45     74259.48      409093.88
+mutex          28900168     60.00     11.85     67.76    481663.85      363025.53
+nanosleep        360873     59.90      2.45      8.99      6024.33       31535.49
+nice               3987     60.01      4.15     11.35        66.44         257.26
+poll            2382467     60.01      2.29      9.27     39702.48      206016.19
+pthread           29738     60.01      1.78     11.82       495.57        2186.91
+resched        40585228     60.01      7.23     43.68    676357.31      797163.09
+schedpolicy        1291     60.17      0.01      0.03        21.46       34009.48
+sem             3994252     60.00      1.48      3.73     66570.65      766053.06
+sem-sysv       19655269     60.00      3.07     17.90    327581.01      937116.64
+session            1834     60.00      0.46      5.96        30.57         285.65
+sleep           2458830     60.03     13.83     64.43     40956.64       31420.62
+softlockup     41359281     60.00     13.03     43.95    689320.73      725772.68
+switch          6537209     60.00      4.14     19.87    108953.57      272301.68
+tee              627757     60.00      1.03     17.53     10462.53       33832.17
+vfork              3620     60.00      0.29      4.37        60.33         777.14
+vforkmany          2416     60.00      0.06      0.47        40.27        4596.10
+wait              42953     60.00      1.33     20.75       715.88        1945.30
+yield         788883518     60.01    105.94    274.41  13146057.14     2074083.67
+zombie            19151     60.03      2.24     18.37       319.04         929.30
+miscellaneous metrics:
+fault           3027.02 minor page faults per sec (average per stressor)
+fault           3026.21 major page faults per sec (average per stressor)
+unsuccessful run completed in 60.31s (1 min, 0.31 secs)
+
+Virtual Memory
+
+setting to a 60 second run per stressor
+dispatching hogs: 1 bad-altstack, 1 bigheap, 1 brk, 1 dev-shm, 1 env, 1 madvise, 1 malloc, 1 mlock, 1 mmap, 1 mmapaddr, 1 mmapfixed, 1 mmapfork, 1 mmaphuge, 1 mmapmany, 1 mprotect, 1 mremap, 1 msync, 1 msyncmany, 1 munmap, 1 pageswap, 1 physpage, 1 shm, 1 shm-sysv, 1 stack, 1 stackmmap, 1 swap, 1 tmpfs, 1 userfaultfd, 1 vm, 1 vm-addr, 1 vm-rw, 1 vm-segv, 1 vm-splice
+stress-ng-swap: 45029 of 56794 (79.28%) pages were swapped out
+stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+                          (secs)    (secs)    (secs)   (real time) (usr+sys time)
+bad-altstack         53     60.00      0.03      0.06         0.88         585.78
+bigheap          211713     62.75      0.74      8.83      3373.88       22120.18
+brk             1588419     61.50      0.53      7.59     25827.79      195749.29
+dev-shm              10     61.74      0.37      8.60         0.16           1.11
+env                 423     60.06      2.91      2.49         7.04          78.28
+madvise             117     60.06      0.52      9.26         1.95          11.95
+malloc           159572     60.21      2.73      3.82      2650.29       24372.76
+mlock             64279     60.93      0.05      8.31      1055.03        7687.64
+mmap                  2     60.48      1.30      6.52         0.03           0.26
+mmapaddr         806755     60.00      0.86      7.41     13445.32       97536.29
+mmapfixed           236     60.01      2.55      3.96         3.93          36.24
+mmapfork             13     60.20     12.88     98.79         0.22           0.12
+mmaphuge            812     60.01      0.41      6.46        13.53         118.14
+mmapmany         261836     60.37      0.32      7.94      4337.42       31670.69
+mprotect        9999931     60.04      3.56     18.52    166549.91      452830.37
+mremap               18     60.20      0.00      7.94         0.30           2.27
+msync              9333     60.09      0.14      3.07       155.31        2905.28
+msyncmany           607     60.06      0.21      5.04        10.11         115.67
+munmap           165998     60.03      0.48      1.26      2765.07       95275.65
+pageswap          74610     60.37      0.17      7.13      1235.84       10232.59
+physpage          10898     60.00      0.25      4.50       181.62        2296.62
+shm                 238     60.21      0.43      4.76         3.95          45.85
+shm-sysv            927     60.03      0.09      3.06        15.44         294.71
+stack           2530321     60.01      2.57      4.24     42167.63      371622.48
+stackmmap           402     60.01      0.17      1.68         6.70         216.95
+swap                388     60.18      0.04      2.11         6.45         180.78
+tmpfs                 3     60.40      1.73      5.44         0.05           0.42
+userfaultfd      486453     60.00      0.43      2.62      8106.98      159264.13
+vm               281844     60.52      4.07      3.55      4657.37       37027.12
+vm-addr              16     62.53      8.97      1.03         0.26           1.60
+vm-rw               725     59.98      0.01      7.74        12.09          93.48
+vm-segv            1535     59.91      0.45      1.13        25.62         969.82
+vm-splice       2317560     60.00      2.95      4.01     38625.93      333333.14
+successful run completed in 62.75s (1 min, 2.75 secs)
